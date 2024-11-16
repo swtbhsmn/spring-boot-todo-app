@@ -1,0 +1,27 @@
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-3 p-1">
+        <a class="navbar-brand m-1 cursor-pointer" href="/">
+            <img width="40" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAAL
+                EwEAmpwYAAAD9UlEQVR4nO2a0WtbVRzHz1NfBPeU4p42WFvbMrWudVp7a9fO1LiVzXTctXVR17FNkwmCm2hRGpRtzawwJggDY
+                aIoioK4gSirDpbiw14Tof/Asnf/go/84qJZdhNP0nOOB7kf+HAv53fO+X1zz6W0oUrFxMTExMRoM5ina1uOC9tPcWf7KfDCHJV
+                tOQqSTdlmR5bCjix46or1B9D7KpW+1+DhLE8rT+g7SSCZJJv1ZgMnQVSe4SzXzhNQ9Th//H3/X1uXxfoDeOw4+Kz1BzB8DMSRo/7
+                8DBheJKjlst5s9yKIyjOc5Ro9CqLyDGe5gpdBVJ7hLNfESyBuZo9khgeUh7m0mMqAqDokWCQxmaE0eYSCT7m0mX4RRNUByQzd0wuU
+                q3ssUK5/E2r76moyV1s8vwBie6uUSoUkUvOUquvn2dgX8lDUvrqaytU2M3MgRtX2z5FNZ+huHJexmTnKd9eWo+bYzGWUg4dBjBjPyfi
+                BkHI6/c8HlHsZi6q5yGWc2RDExvEwJDEbUpJaOmQjnWZr41jY8NpH7aurbi7jHD4EYlRNTjc8RFnqcq2//7eTr+2razu5jLIwC2Kzup
+                z6/Cyl2rz5dOuTd5XLGJk0iK3mhCFbMi+wJB5J8aD1UJq5jPDKQRCVZzjLdewAiMoznOU6MQOi8gxnubL7QVSe4SzX6/tAVJ7hLNcbKRC
+                VZzjL9eZzIG5mj9NJ898HmMilxVvTIKoOWUqRODNN6UzS7PcBm82lzTvPgqg64HSS7rf3Upb1cq1/E2r76moyV1u8txfETk7+3SlK1fVT
+                bOQn7v31uLavrqZytU1+CsSo2vIk2Xzy/j96ZGx5irKsq14j5tjMZZQP9oDYOP7+HnJ3a/d8QLmXsaiai1zGOTcB4n3jAYlzE5SkdvY
+                ZNs6Os7Vx7MOG1z5qX111cxmnMA5iVG11lO5CQLk6R65191LT2VfXdnIZ5aMAxGb1SwGJ1TFKtXmrQeuTd5XLGBfHQGw1pzDMlot
+                jLImXdrv5PkAnlxE+HgVReYazXJ88BaLyDGe5Lj8JovIMZ7k+fQJE5RnOcn02AqJyxLeDdF0Z4cKVEe7UerfSeqAvdoGoHPH5Lgq1nj
+                paD/TV4yAqR3w5REX6fT3U+n+SnOX6ZghE643a7Ocs13ePgmi9UZN+y+v8ll8HcbnIuvNc3z8CovVGTfpd/hXqdZ7r2k4QrTdq0u+Hn6Be
+                57l+HATReqMm/W5dZf3WNah6laLzXD8PgGi9UZv9nOVa66ey1g9rfQTWm/3VD7HVnF8GGJc51/u5bT3QjV5WbvSBp563/gB+H6Sr2MvK
+                zR4qxV7wwZs93C72cF6yWX8AMTExMTHq/8OfSl8X4Iv7yOwAAAAASUVORK5CYII=" alt="todo-list">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/todo-list">Todos</a></li>
+            </ul>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+        </ul>
+    </nav>

@@ -2,7 +2,8 @@
 
 ### Run cmd to start mysql in docker, if image not found it will pull and start.
 
-```docker start --detach \ 
+```
+  docker start --detach \ 
   --env MYSQL_ROOT_PASSWORD=admin \
   --env MYSQL_USER=todos-user \
   --env MYSQL_PASSWORD=admin \
@@ -20,7 +21,8 @@
 ### Mysql-Commands:
 
 
->SHOW DATABASES;
+> SHOW DATABASES;
+
 ```
 +--------------------+
 | Database           |

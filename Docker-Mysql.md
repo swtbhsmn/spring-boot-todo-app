@@ -50,6 +50,16 @@ Database changed
 
 >SELECT * FROM todo;
 
->DESCRIBE todos;
+```
++-----+-------------+------------+-------------+----------+
+| id  | description | done       | target_date | username |
++-----+-------------+------------+-------------+----------+
+| 100 | Learn AWS   | 0x00       | 2024-11-18  | admin    |
++-----+-------------+------------+-------------+----------+
 
->SELECT * FROM todos;
+```
+
+> DROP DATABASE todos;
+
+> CREATE DATABASE todos;
+

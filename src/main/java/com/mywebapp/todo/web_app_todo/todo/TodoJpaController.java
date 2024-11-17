@@ -18,25 +18,25 @@ import jakarta.validation.Valid;
 
 @Controller
 @SessionAttributes("username")
-public class TodoController {
+public class TodoJpaController {
 
-    private TodoService todoService;
+    private TodoRepository todoRepository;
 
-    public TodoController(TodoService todoService) {
+    public TodoJpaController(TodoRepository todoRepository) {
         super();
-        this.todoService = todoService;
+        this.todoRepository = todoRepository;
     }
 
     @RequestMapping(value = "lists", method = RequestMethod.GET)
     @ResponseBody
     public List<Todo> requestAllTodo() {
-        List<Todo> data = todoService.getTodoLists();
+        List<Todo> data = todoRepository.findAll();
         return data;
     }
 
     @RequestMapping(value = "todo-list", method = RequestMethod.GET)
     public String requestMethodName(ModelMap model) {
-        List<Todo> data = todoService.getTodoListByUsername(getLoggedInUsername());
+        List<Todo> data = todoRepository.findByUsername(getLoggedInUsername());
         model.addAttribute("todos", data);
         return "todoList";
     }
@@ -52,19 +52,20 @@ public class TodoController {
         if (result.hasErrors()) {
             return "addTodo";
         }
-        todoService.addTodo(getLoggedInUsername(), todo.getDescription(), LocalDate.now(), false);
+        todo.setUsername(getLoggedInUsername());
+        todoRepository.save(todo);
         return "redirect:todo-list";
     }
 
     @RequestMapping(value = "delete-todo")
     public String deleteTodo(@RequestParam int id) {
-        todoService.deleteTodoItem(id);
+        todoRepository.deleteById(id);
         return "redirect:todo-list";
     }
 
     @RequestMapping(value = "update-todo", method = RequestMethod.GET)
     public String showPageUpdateTodo(@RequestParam int id, ModelMap model) {
-        model.addAttribute("todo", todoService.findTodoItem(id));
+        model.addAttribute("todo", todoRepository.findById(id).get());
         return "updateTodo";
     }
 
@@ -74,7 +75,8 @@ public class TodoController {
         if (result.hasErrors()) {
             return "addTodo";
         }
-        todoService.updateTodoItem(todo);
+        todo.setUsername(getLoggedInUsername());
+        todoRepository.save(todo);
         return "redirect:todo-list";
     }
 

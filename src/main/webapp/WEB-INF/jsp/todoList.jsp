@@ -11,7 +11,7 @@
     <body>
         <%@ include file="common/nav.jspf" %>
             <div class="container">
-                <div style="margin-top: 20px;">Hi ${username}!</div>
+                <div style="margin: 20px 0;">Hi ${username}!</div>
                 <div style="margin-top: 5%;">
                     <div class="table-responsive">
                         <table class="table table-striped">

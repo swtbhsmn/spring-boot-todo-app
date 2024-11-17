@@ -22,7 +22,7 @@ public class WelcomeController {
         model.put("error", null);
         model.put("username", getLoggedInUsername());
         logger.info("Open to welcome page.");
-        return "todoList";
+        return "welcome";
     }
     
     private String getLoggedInUsername(){

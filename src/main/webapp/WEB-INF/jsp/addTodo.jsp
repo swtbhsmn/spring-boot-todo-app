@@ -17,7 +17,7 @@
                             <form:label path="description">Description</form:label>
                             <form:input cssClass="form-control" placeholder="Enter Description" path="description" />
                             <form:errors path="description" element="li" cssClass="text-danger" />
-
+                            <form:input type="hidden" path="username" value="${todo.username}" />
                         </div>
                         <div class="form-group">
                             <form:label path="targetDate">Target Date</form:label>

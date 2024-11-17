@@ -7,7 +7,7 @@
 </head>
 
 <body>
-        <h1>Welcome ${username}!</h1>
+        <h1>Welcome! ${username}</h1>
         <a href="/todo-list?username=${username}">Manage Todo list</a>
     <%@ include file="common/script.jspf" %>
 </body>

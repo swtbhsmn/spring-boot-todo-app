@@ -1,8 +1,5 @@
 package com.mywebapp.todo.web_app_todo.todo;
-
-import java.time.LocalDate;
 import java.util.List;
-
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;

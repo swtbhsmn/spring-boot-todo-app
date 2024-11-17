@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Todo {
     @Id
-    @SequenceGenerator(name = "todo_seq", sequenceName = "todo_sequence", initialValue = 105, allocationSize = 1)
+    @SequenceGenerator(name = "todo_seq", sequenceName = "todo_sequence", initialValue = 100, allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "todo_seq")
     private int id;
     private String username;
